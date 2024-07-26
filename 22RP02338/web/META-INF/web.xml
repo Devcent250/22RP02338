@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    
+    <!-- Servlet definitions -->
+    <servlet>
+        <servlet-name>AddItemServlet</servlet-name>
+        <servlet-class>com.yourpackage.AddItemServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewCart</servlet-name>
+        <servlet-class>com.yourpackage.ViewCartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemoveItem</servlet-name>
+        <servlet-class>com.yourpackage.RemoveItemServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ClearCart</servlet-name>
+        <servlet-class>com.yourpackage.ClearCartServlet</servlet-class>
+    </servlet>
+    
+    <!-- Servlet mappings -->
+    <servlet-mapping>
+        <servlet-name>AddItem</servlet-name>
+        <url-pattern>/add-item</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewCart</servlet-name>
+        <url-pattern>/view-cart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveItem</servlet-name>
+        <url-pattern>/remove-item</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClearCart</servlet-name>
+        <url-pattern>/clear-cart</url-pattern>
+    </servlet-mapping>
+</web-app>
